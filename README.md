@@ -1,16 +1,21 @@
-# GIGABYTE GA-H270M-DS3H
+# GIGABYTE GA-H270M-D3H
 
-OpenCore EFI for Gigabyte GA-H270M-DS3H
+OpenCore EFI for Gigabyte GA-H270M-D3H
 
-![about](https://raw.githubusercontent.com/randvmbone/GA-H270M-DS3H/master/about.png)
+![about](https://raw.githubusercontent.com/securecrt/GA-H270M-D3H/master/about.png)
+
+
+### OpenCore 
+* **Version:** 0.9.0
 
 ### Hardware
 
-* **MOBO:** Gigabyte GA-H270M-DS3H
-* **RAM:** Mushkin DDR4-2400 16GB (2x8GB)
-* **CPU:** Intel Core i5-7400
+* **MOBO:** Gigabyte GA-H270M-D3H
+* **RAM:** Kingston DDR4-2400 32GB (4x8GB)
+* **CPU:** Intel Core i7-7700
 * **GPU:** Intel HD Graphics 630
-* **SSD:** Patriot Burst 240GB
+* **dGPU:** Nvidia Gefore 1050 Ti
+* **SSD:** Samsung SSD 970 EVO 1TB
 
 ### BIOS Settings
 
@@ -33,10 +38,13 @@ OpenCore EFI for Gigabyte GA-H270M-DS3H
 		* VT-d → **Disabled**      
 		* DVMT Pre-Allocated → **64M**
 
+### Issues
+* dGPU not working
+* Wifi (ax200) is not stable
+* Bluetooth can't work
+* Hibernation
+
 ### macOS Support
 | Version   | macOS | Download |
 | --------: | :---- | :------- |
-| 11.7.2 | Big Sur | [Mac App Store](https://apps.apple.com/app/macos-big-sur/id1526878132?mt=12) |
-| 10.15.7 | Catalina | [Mac App Store](https://apps.apple.com/app/macos-catalina/id1466841314?mt=12) |
-| 10.14.6 | Mojave | [Mac App Store](https://apps.apple.com/app/macos-mojave/id1398502828?mt=12) |
-| 10.13.6 | High Sierra | [Mac App Store](https://apps.apple.com/app/macos-high-sierra/id1246284741?mt=12) |
+| 13.2.1 | Ventura | [Mac App Store](https://apps.apple.com/us/app/macos-ventura/id1638787999?mt=12) |
