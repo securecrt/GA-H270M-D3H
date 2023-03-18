@@ -2,8 +2,26 @@
 
 OpenCore EFI for Gigabyte GA-H270M-D3H
 
-![about](https://raw.githubusercontent.com/securecrt/GA-H270M-D3H/master/about.png)
 
+```text
+                    'c.          iMac
+                 ,xNMM.          -------------------- 
+               .OMMMMo           OS: macOS 13.2.1 22D68 x86_64 
+               OMMM0,            Host: Hackintosh (SMBIOS: iMac18,2) 
+     .;loddo:' loolloddol;.      Kernel: 22.3.0 
+   cKMMMMMMMMMMNWMMMMMMMMMM0:    Uptime: 1 hour, 2 mins 
+ .KMMMMMMMMMMMMMMMMMMMMMMMWd.    Packages: 93 (brew) 
+ XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: bash 5.2.15 
+;MMMMMMMMMMMMMMMMMMMMMMMM:       Resolution: 2560x1440@2x 
+:MMMMMMMMMMMMMMMMMMMMMMMM:       DE: Aqua 
+.MMMMMMMMMMMMMMMMMMMMMMMMX.      WM: Quartz Compositor 
+ kMMMMMMMMMMMMMMMMMMMMMMMMWd.    WM Theme: Blue (Dark) 
+ .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   Terminal: Apple_Terminal 
+  .XMMMMMMMMMMMMMMMMMMMMMMMMK.   Terminal Font: SFMono-Regular 
+    kMMMMMMMMMMMMMMMMMMMMMMd     CPU: Intel i7-7700 (8) @ 3.60GHz 
+     ;KMMMMMMMWXXWMMMMMMMk.      GPU: AMD Radeon RX 6600 XT 
+       .cooc,.    .,coo:.        Memory: 11318MiB / 32768MiB 
+```
 
 ### OpenCore 
 * **Version:** 0.9.0
@@ -13,9 +31,10 @@ OpenCore EFI for Gigabyte GA-H270M-D3H
 * **MOBO:** Gigabyte GA-H270M-D3H
 * **RAM:** Kingston DDR4-2400 32GB (4x8GB)
 * **CPU:** Intel Core i7-7700
-* **GPU:** Intel HD Graphics 630
-* **dGPU:** Nvidia Gefore 1050 Ti
+* **GPU:** AMD Radeon RX 6600 XT
+* **WIFI/BT:** BCM934602CS
 * **SSD:** Samsung SSD 970 EVO 1TB
+
 
 ### BIOS Settings
 
@@ -23,10 +42,10 @@ OpenCore EFI for Gigabyte GA-H270M-D3H
 	* M.I.T.
 		*  Advanced Memory Settings
 			*  Extreme Memory Profile(X.M.P.) → **Profile1**
-	*  BIOS
-			*  Fast Boot → **Disabled**
-			*  Windows 8/10 Features → **Windows 8/10**
-			*  CSM Support → **Disabled**
+	* BIOS
+		*  Fast Boot → **Disabled**
+		*  Windows 8/10 Features → **Windows 8/10**
+		*  CSM Support → **Disabled**
 	* Peripherals
 		* Initial Display Output → **iGFX**
 		* Intel Platform Trust Technology (PTT) → **Enabled**
@@ -35,14 +54,11 @@ OpenCore EFI for Gigabyte GA-H270M-D3H
 		* USB Configuration
 			* XHCI Hand-off → **Enabled**
 	* Chipset
-		* VT-d → **Disabled**      
+		* VT-d → **Enabled**      
 		* DVMT Pre-Allocated → **64M**
 
-### Issues
-* dGPU not working
-* Wifi (ax200) is not stable
-* Bluetooth can't work
-* Hibernation
+### Not working
+None
 
 ### macOS Support
 | Version   | macOS | Download |
